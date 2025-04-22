@@ -1,137 +1,92 @@
-# Portfolio Personnel
+# Portfolio Personnel - Page Blanche
+
+> **Note:** Ce projet est actuellement une "page blanche" intentionnelle, prête pour le développement progressif du portfolio.
 
 ## Structure du Projet
 
 ```
 portfolio-website/
 ├── src/
-│   ├── components/       # Composants réutilisables
-│   ├── sections/        # Sections principales du site
-│   ├── styles/         # Fichiers CSS et styles
-│   ├── assets/         # Images, fonts et autres ressources
-│   ├── App.tsx         # Composant principal
-│   ├── main.tsx        # Point d'entrée
-│   └── index.css       # Styles globaux et Tailwind
-├── public/             # Fichiers statiques
-├── package.json        # Dépendances et scripts
-└── tailwind.config.js  # Configuration Tailwind CSS
+│   ├── components/     # [VIDE] Futurs composants React
+│   ├── sections/      # [VIDE] Futures sections du site
+│   ├── assets/        # [VIDE] Futures ressources (images, fonts)
+│   ├── App.tsx        # Composant racine (vide)
+│   ├── main.tsx       # Point d'entrée
+│   └── index.css      # Styles Tailwind de base
+├── public/            # Fichiers statiques
+└── config/            # Fichiers de configuration
 ```
 
-## Technologies Utilisées
+## Technologies de Base
 
-### Base du Projet
-- **Node.js** : v16.x ou supérieur
-- **npm** : v8.x ou supérieur
-- **TypeScript** : Superset typé de JavaScript
-- **React** : v18.2.0 - Bibliothèque UI
-- **Vite** : Outil de build moderne et rapide
+- **React 18** avec **TypeScript**
+- **Tailwind CSS** pour le styling
+- **Vite** comme bundler
 
-### Styles et Design
-- **Tailwind CSS** : Framework CSS utilitaire
-- **PostCSS** : Outil de transformation CSS
-- **Autoprefixer** : Gestion automatique des préfixes CSS
+## Configuration Minimale Requise
 
-## Configuration Initiale
+- Node.js ≥ 16.x
+- npm ≥ 8.x
 
-1. **Vérification de l'environnement** :
+## Installation
+
 ```bash
-node -v  # Doit être v16.x ou supérieur
-npm -v   # Doit être v8.x ou supérieur
-```
-
-2. **Installation des dépendances** :
-```bash
+# Installation des dépendances
 npm install
-```
 
-3. **Lancement du serveur de développement** :
-```bash
+# Démarrage du serveur de développement
 npm run dev
 ```
 
-## Connexion avec GitHub
+## État Actuel
 
-1. **Initialisation du dépôt** :
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-```
+Le projet est intentionnellement vide et prêt pour le développement. Il contient :
 
-2. **Connexion au dépôt distant** :
-```bash
-git remote add origin https://github.com/hamza1br/hamza1br.github.io.git
-git branch -M main
-git push -u origin main
-```
+✅ Structure de base des dossiers
+✅ Configuration TypeScript
+✅ Configuration Tailwind CSS
+✅ Configuration Vite
+✅ Configuration Git
 
-3. **Configuration de GitHub Pages** :
-- Aller dans Settings > Pages
-- Source : branch 'main'
-- Dossier : '/root'
+## Prochaines Étapes
+
+1. Développement des composants de base
+2. Implémentation des sections principales
+3. Ajout des animations et interactions
+4. Intégration du contenu
+5. Optimisation et déploiement
 
 ## Scripts Disponibles
 
-- `npm run dev` : Lance le serveur de développement
-- `npm run build` : Crée la version de production
-- `npm run preview` : Prévisualise la version de production
+- `npm run dev` - Lance le serveur de développement
+- `npm run build` - Crée la version de production
+- `npm run preview` - Prévisualise la version de production
 
-## Commandes Git Utiles
+## Git et Déploiement
 
 ```bash
-# Vérifier l'état des fichiers
+# Commandes Git essentielles
 git status
-
-# Ajouter des modifications
 git add .
-
-# Créer un commit
-git commit -m "Description des changements"
-
-# Pousser les changements
+git commit -m "Description"
 git push origin main
 
-# Récupérer les changements
-git pull origin main
+# Déploiement sur GitHub Pages
+npm run build
+git add dist -f
+git commit -m "Deploy"
+git subtree push --prefix dist origin gh-pages
 ```
 
-## Structure des Composants
-
-Les composants seront organisés comme suit :
+## Structure Prévue des Composants
 
 ```
 components/
-├── layout/          # Composants de mise en page
-│   ├── Header
-│   ├── Footer
-│   └── Navigation
-├── sections/        # Sections principales
-│   ├── Hero
-│   ├── About
-│   ├── Projects
-│   └── Contact
-└── ui/             # Composants UI réutilisables
-    ├── Button
-    ├── Card
-    └── Input
+├── layout/          # [À VENIR] Composants de structure
+├── sections/        # [À VENIR] Sections principales
+└── ui/             # [À VENIR] Composants d'interface
 ```
 
-## Conventions de Code
+---
 
-- Utilisation des composants fonctionnels React avec TypeScript
-- Nommage en PascalCase pour les composants
-- Nommage en camelCase pour les fonctions et variables
-- Utilisation des classes Tailwind pour le style
-- Documentation des props avec TypeScript interfaces
-
-## Déploiement
-
-Le site sera déployé sur GitHub Pages à l'adresse : https://hamza1br.github.io
-
-Pour déployer :
-```bash
-npm run build
-git add dist -f
-git commit -m "Deploy website"
-git subtree push --prefix dist origin gh-pages
-``` 
+> Ce README sera mis à jour au fur et à mesure du développement du portfolio. 
