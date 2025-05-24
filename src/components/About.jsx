@@ -142,7 +142,7 @@ const About = () => {
             <motion.li className="flex items-start" variants={fadeIn("up", "spring", 0.2, 0.75)}>
               <span className="mr-4 text-2xl flex-shrink-0">🎓</span>
               <span>
-                Currently working toward my Honours Bachelor of Science in Computer Science at Ontario Tech University, I&apos;m all about building reliable, scalable software that makes a difference.
+                Diplômé en test DUT (Diplôme Universitaire de Technologie) en Développement Web et Mobile.
               </span>
             </motion.li>
             <motion.li className="flex items-start" variants={fadeIn("up", "spring", 0.3, 0.75)}>
